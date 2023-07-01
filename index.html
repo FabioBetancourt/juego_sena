@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Juego de Ataque y Defensa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="pantalla-inicio">
+        <h1>Bienvenido a Ataque y Defensa</h1>
+        <button id="boton-inicio">Comenzar Juego</button>
+        <p>Desarrollado por: Fabio Betancourt</p>
+        <p>Programa: ADSO</p>
+        <p>Numero de ficha: 2613934</p>
+    </div>
+
+    <div id="pantalla-juego">
+        <div id="jugador" class="personaje">
+            <h2>Messi</h2>
+            <img id="imagen-jugador" src="messi.jpg" width="300px">
+            <p>Vida: <span id="vida-jugador">100</span></p>
+            <!-- ... -->
+            <div id="botones-ataque-jugador">
+                <img class="ataque" data-tipo="tiro al arco" src="patea.jpg" alt="Ataque Fuego">
+                <img class="ataque" data-tipo="dribleo" src="dribleo.jpg" alt="Ataque Agua">
+                <img class="ataque" data-tipo="celebracion" src="humilla.jpg" alt="Ataque Eléctrico">
+            </div>
+            <div id="botones-defensa-jugador" style="display: none;">
+                <img class="defensa" data-tipo="tiro al arco" src="defensa1.jpg" alt="Defensa Fuego">
+                <img class="defensa" data-tipo="dribleo" src="defensa2.jpeg" alt="Defensa Agua">
+                <img class="defensa" data-tipo="celebracion" src="defensa3..jpeg" alt="Defensa Eléctrica">
+            </div>
+            <!-- ... -->
+
+        </div>
+
+        <div id="enemigo" class="personaje">
+            <h2>El Bicho</h2>
+            <img id="imagen-jugador" src="elbicho.jpeg" width="300px">
+            <p>Vida: <span id="vida-enemigo">100</span></p>
+        </div>
+
+        <div id="mensajes" class="mensajes">
+            <h2>Mensajes</h2>
+        </div>
+    </div>
+</body>
+<script src="juego.js"></script>
+
+</html>
